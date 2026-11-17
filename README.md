@@ -6,13 +6,13 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1120,40:1e3a8a,100:0ea5e9&height=200&section=header&text=JAY201368&fontSize=72&fontColor=f8fafc&fontAlignY=38&desc=Lingxiang%20Hu%20%C2%B7%20Software%20Engineering%20%40%20Nanjing%20University&descAlignY=60&descSize=17&animation=twinkling" width="100%" alt="JAY201368" />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Coding+agents+that+actually+ship;Photography+tools+with+a+film+soul;Python+%C2%B7+TypeScript+%C2%B7+just+enough+CUDA" />
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1000&color=0B6BCB&center=true&vCenter=true&width=700&lines=Coding+agents+that+actually+ship;Photography+tools+with+a+film+soul;Python+%C2%B7+TypeScript+%C2%B7+just+enough+CUDA" alt="typing" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Coding+agents+that+actually+ship;Photography+apps+that+look+as+good+as+they+work;Python+%C2%B7+TypeScript+%C2%B7+a+little+Metal" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&pause=1000&color=0B6BCB&center=true&vCenter=true&width=700&lines=Coding+agents+that+actually+ship;Photography+apps+that+look+as+good+as+they+work;Python+%C2%B7+TypeScript+%C2%B7+a+little+Metal" alt="typing" />
 </picture>
 
 <br />
 
-![Focus](https://img.shields.io/badge/focus-agents%20%C2%B7%20photo%20pipelines-0ea5e9?style=flat-square)
+![Focus](https://img.shields.io/badge/focus-agents%20%C2%B7%20photo%20apps-0ea5e9?style=flat-square)
 ![Profile views](https://komarev.com/ghpvc/?username=JAY201368&label=visitors&color=0ea5e9&style=flat-square)
 
 *I build tools for the two things I keep coming back to: **agents that write code**, and **cameras that shoot film**.*
@@ -24,8 +24,8 @@
 | Area | In practice |
 | :-- | :-- |
 | 🤖 **Agents** | Local-first coding agents — my own agent loop, tool protocol, permission model and event trace. No framework in the middle. |
-| 📷 **Photography** | RAW pipelines, spectral film simulation, light & weather planning. Tools I use before I press the shutter. |
-| 🧱 **Systems** | Python and TypeScript by default; C++ / CUDA / Metal when the pixels get heavy. |
+| 📷 **Photo apps** | Websites and small apps I wanted for my own shooting: light & weather planning, RAW file handling. Built as much for how they look and feel as for what they do. |
+| 🧱 **Systems** | Python and TypeScript by default; C++ / Metal only where it actually pays off. |
 
 ## Selected work
 
