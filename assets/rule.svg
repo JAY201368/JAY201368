@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 46" width="1200" height="46" aria-hidden="true">
+
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="rough2" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.6"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="8"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <path d="M 30 23 C 200 19, 380 27, 556 23" stroke="#A9472B" stroke-width="2" fill="none"
+        filter="url(#rough)" opacity=".8"/>
+  <path d="M 644 23 C 820 27, 1000 19, 1170 23" stroke="#A9472B" stroke-width="2" fill="none"
+        filter="url(#rough)" opacity=".8"/>
+  <g stroke="#A9472B" stroke-width="1.4" fill="none" filter="url(#rough)" stroke-linecap="round">
+    <circle cx="600" cy="23" r="5.5"/><path d="M 609.5 23.0 L 615.5 23.0"/><path d="M 606.7 29.7 L 611.0 34.0"/><path d="M 600.0 32.5 L 600.0 38.5"/><path d="M 593.3 29.7 L 589.0 34.0"/><path d="M 590.5 23.0 L 584.5 23.0"/><path d="M 593.3 16.3 L 589.0 12.0"/><path d="M 600.0 13.5 L 600.0 7.5"/><path d="M 606.7 16.3 L 611.0 12.0"/>
+  </g>
+</svg>

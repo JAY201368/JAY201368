@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 230" width="800" height="230" role="img"
+     aria-label="maestro: A Codex skill that orchestrates workers, task dependencies and staged software delivery.">
+
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="rough2" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.6"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="8"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#rough2)">
+    <path d="M 7.4 9.1 L 61.1 8.5 L 115.0 7.4 L 171.1 7.3 L 224.3 7.9 L 277.9 8.0 L 331.3 8.8 L 385.1 7.4 L 438.9 7.5 L 493.8 8.9 L 547.7 7.1 L 601.4 9.1 L 655.0 8.3 L 709.7 8.4 L 763.6 8.4 L 792.0 8.3 L 792.9 62.2 L 791.2 115.0 L 793.0 170.0 L 791.3 223.0 L 738.2 222.5 L 684.9 221.5 L 629.7 222.9 L 575.2 222.6 L 521.1 222.4 L 468.5 223.0 L 414.8 222.0 L 359.3 221.2 L 306.1 222.0 L 251.0 222.9 L 198.0 222.5 L 143.4 221.4 L 88.9 221.6 L 35.5 221.8 L 7.7 222.8 L 8.9 167.3 L 7.8 113.2 L 8.4 61.1 Z" fill="#F4EBD5" stroke="#1F3B2C" stroke-width="1.7"/>
+    <path d="M 14.8 15.8 L 69.7 14.5 L 123.7 15.3 L 176.1 15.9 L 230.5 14.6 L 284.9 15.2 L 338.3 15.4 L 393.6 15.0 L 447.6 15.2 L 501.6 14.4 L 554.7 14.9 L 608.2 15.9 L 663.3 14.2 L 717.2 14.8 L 770.4 14.4 L 784.9 14.2 L 785.1 69.0 L 784.3 123.7 L 784.1 176.4 L 785.6 214.5 L 730.9 215.1 L 676.9 215.0 L 623.0 215.0 L 568.2 215.6 L 514.6 214.1 L 460.8 215.6 L 407.2 214.9 L 353.0 214.5 L 299.2 214.7 L 244.2 214.3 L 190.2 215.4 L 137.7 215.5 L 82.5 214.3 L 29.9 214.8 L 14.4 215.1 L 15.2 161.1 L 14.9 106.6 L 15.0 52.9 Z" fill="none" stroke="#1F3B2C" stroke-width="0.7" opacity=".3"/>
+  </g>
+  <rect x="0" y="0" width="800" height="230" fill="#8a7a5c" filter="url(#grain)" opacity="0.05"/>
+
+  <text x="56" y="46" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="11.5" fill="#A9472B" letter-spacing="2.4">01 / 04</text>
+  <text x="56" y="88" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="33" fill="#1F3B2C" letter-spacing="0.6">maestro</text>
+
+  <text x="56" y="126" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="20.5" fill="#1F3B2C" opacity=".9">A Codex skill that orchestrates workers, task</text><text x="56" y="153" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="20.5" fill="#1F3B2C" opacity=".9">dependencies and staged software delivery.</text>
+  <rect x="56" y="170" width="63" height="24" rx="3" fill="none" stroke="#1F3B2C" stroke-width="1.2" opacity=".6" filter="url(#rough)"/><text x="88" y="187" text-anchor="middle" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="11.5" fill="#1F3B2C" opacity=".8" letter-spacing="1">Python</text>
+  <text x="754" y="187" text-anchor="end" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="12" fill="#A9472B" letter-spacing="1.6">docs ↗</text>
+
+  <g transform="translate(680 74)">
+      <g stroke="#1F3B2C" stroke-width="1.9" fill="none" filter="url(#rough)" stroke-linecap="round">
+        <circle cx="26" cy="16" r="8"/><circle cx="64" cy="44" r="8"/><circle cx="26" cy="72" r="8"/>
+        <path d="M 34 20 L 56 40"/><path d="M 34 68 L 56 48"/><path d="M 26 24 L 26 64"/>
+        <circle cx="64" cy="44" r="13" opacity=".3"/>
+      </g></g>
+</svg>

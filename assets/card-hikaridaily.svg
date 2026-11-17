@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 230" width="800" height="230" role="img"
+     aria-label="HikariDaily: A photography weather newspaper: sun position, shooting windows, gear readings and a field handbook.">
+
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="rough2" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.6"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="8"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#rough2)">
+    <path d="M 8.2 7.8 L 62.2 7.3 L 116.7 8.7 L 170.4 7.2 L 224.0 7.6 L 277.4 9.0 L 333.1 7.0 L 386.8 8.2 L 439.7 7.5 L 494.4 7.9 L 548.4 8.4 L 601.2 8.6 L 657.1 9.1 L 710.3 7.0 L 762.9 7.2 L 793.0 7.5 L 791.7 62.9 L 791.6 116.1 L 791.9 169.0 L 792.2 222.8 L 737.2 221.4 L 683.8 220.9 L 630.0 222.7 L 576.4 222.1 L 522.8 221.2 L 468.2 221.7 L 414.2 221.1 L 360.6 221.1 L 305.2 222.7 L 253.0 221.8 L 197.8 221.4 L 143.5 222.3 L 89.3 221.1 L 35.9 221.2 L 8.3 222.7 L 8.6 168.0 L 7.6 113.8 L 6.9 60.5 Z" fill="#F4EBD5" stroke="#1F3B2C" stroke-width="1.7"/>
+    <path d="M 15.3 15.4 L 69.9 14.4 L 122.2 15.6 L 176.7 14.8 L 231.6 14.4 L 285.8 15.0 L 338.2 15.8 L 393.1 14.2 L 447.6 15.5 L 501.5 15.3 L 555.9 14.1 L 609.9 15.3 L 662.5 15.2 L 716.7 15.3 L 771.4 15.0 L 784.2 14.8 L 784.6 69.5 L 785.8 123.5 L 785.1 176.4 L 785.4 214.6 L 731.9 214.4 L 677.9 214.1 L 623.5 214.7 L 569.1 214.8 L 514.6 214.9 L 461.6 214.7 L 406.7 215.5 L 352.4 214.7 L 299.0 215.0 L 244.4 215.5 L 191.0 214.2 L 136.7 214.2 L 82.7 214.3 L 28.5 215.1 L 15.4 214.6 L 14.9 161.0 L 15.2 107.8 L 14.5 53.5 Z" fill="none" stroke="#1F3B2C" stroke-width="0.7" opacity=".3"/>
+  </g>
+  <rect x="0" y="0" width="800" height="230" fill="#8a7a5c" filter="url(#grain)" opacity="0.05"/>
+
+  <text x="56" y="46" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="11.5" fill="#A9472B" letter-spacing="2.4">03 / 04</text>
+  <text x="56" y="88" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="33" fill="#1F3B2C" letter-spacing="0.6">HikariDaily</text>
+
+  <text x="56" y="126" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="20.5" fill="#1F3B2C" opacity=".9">A photography weather newspaper: sun position, shooting</text><text x="56" y="153" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="20.5" fill="#1F3B2C" opacity=".9">windows, gear readings and a field handbook.</text>
+  <rect x="56" y="170" width="97" height="24" rx="3" fill="none" stroke="#1F3B2C" stroke-width="1.2" opacity=".6" filter="url(#rough)"/><text x="104" y="187" text-anchor="middle" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="11.5" fill="#1F3B2C" opacity=".8" letter-spacing="1">TypeScript</text>
+  <text x="754" y="187" text-anchor="end" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="12" fill="#A9472B" letter-spacing="1.6">live ↗</text>
+
+  <g transform="translate(680 74)">
+      <g stroke="#1F3B2C" stroke-width="1.9" fill="none" filter="url(#rough)" stroke-linecap="round">
+        <path d="M 5 10 h 80 v 62 H 5 Z"/><path d="M 5 23 h 80"/>
+        <path d="M 12 32 h 27 v 20 H 12 Z"/>
+        <path d="M 46 32 h 31"/><path d="M 46 41 h 31"/><path d="M 46 50 h 22"/>
+        <path d="M 12 61 h 61" opacity=".5"/><path d="M 12 65 h 61" opacity=".35"/>
+        <circle cx="78" cy="17" r="3.6" stroke="#A9472B"/>
+      </g></g>
+</svg>

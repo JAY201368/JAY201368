@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 372" width="1200" height="372" role="img"
+     aria-label="JAY201368 — Lingxiang Hu, Software Engineering, Nanjing University">
+
+  <defs>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="rough2" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.6"
+                         xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="8"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <linearGradient id="vg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#254834"/><stop offset="1" stop-color="#15291E"/>
+  </linearGradient>
+  <rect width="1200" height="372" fill="#1F3B2C"/>
+  <rect width="1200" height="372" fill="url(#vg)"/>
+  <rect x="0" y="0" width="1200" height="372" fill="#8a7a5c" filter="url(#grain)" opacity="0.09"/>
+
+  <g filter="url(#rough2)" fill="none">
+    <path d="M 25.3 24.1 L 77.6 24.3 L 130.4 22.8 L 180.6 24.9 L 233.3 23.3 L 287.4 23.9 L 338.9 23.9 L 390.4 23.0 L 442.4 25.0 L 494.1 24.7 L 546.5 22.8 L 598.7 24.3 L 649.4 22.7 L 703.0 23.9 L 754.6 25.1 L 806.6 25.2 L 857.7 24.8 L 909.8 25.2 L 963.1 22.9 L 1013.0 23.2 L 1067.3 23.8 L 1118.4 23.4 L 1170.0 23.7 L 1173.6 24.2 L 1174.2 77.1 L 1174.5 129.2 L 1175.0 181.4 L 1174.5 231.1 L 1175.0 285.3 L 1175.1 336.2 L 1174.6 347.2 L 1122.9 348.2 L 1069.4 346.8 L 1019.0 349.4 L 964.8 348.8 L 913.7 347.0 L 861.4 348.8 L 811.0 346.7 L 758.3 346.7 L 706.6 347.5 L 655.1 349.3 L 602.0 349.4 L 549.5 346.8 L 498.3 346.7 L 445.2 347.7 L 394.3 347.0 L 340.7 349.0 L 289.5 349.3 L 239.1 347.7 L 185.9 348.1 L 134.4 348.3 L 82.2 348.3 L 31.2 348.0 L 25.8 348.6 L 25.3 295.4 L 27.3 244.1 L 26.1 190.6 L 25.8 140.2 L 24.7 88.3 L 26.4 34.8 Z" stroke="#F4EBD5" stroke-width="2.2" opacity=".85"/>
+    <path d="M 33.9 31.7 L 85.1 32.9 L 136.8 32.0 L 191.0 31.0 L 242.1 32.3 L 292.9 31.7 L 346.5 31.9 L 398.5 31.2 L 449.4 31.1 L 502.0 33.0 L 554.2 32.7 L 605.7 32.6 L 657.0 31.5 L 710.4 32.5 L 761.8 31.0 L 813.4 31.3 L 865.5 32.7 L 917.3 32.9 L 970.9 30.9 L 1021.7 32.0 L 1072.9 31.8 L 1127.0 31.1 L 1166.2 31.1 L 1166.2 84.9 L 1165.3 134.8 L 1165.0 188.1 L 1164.8 239.0 L 1166.0 293.0 L 1165.8 339.8 L 1114.3 339.0 L 1062.2 339.2 L 1010.3 341.1 L 956.9 340.1 L 906.3 339.2 L 853.4 341.2 L 803.2 339.1 L 750.5 341.1 L 697.4 340.3 L 644.9 339.7 L 594.4 340.2 L 542.7 339.0 L 489.6 340.9 L 438.2 339.9 L 385.8 341.2 L 334.2 338.8 L 282.7 339.6 L 229.8 339.3 L 177.9 339.6 L 125.0 340.3 L 73.0 340.7 L 32.9 340.7 L 34.7 288.0 L 34.5 235.4 L 34.6 183.8 L 33.4 133.1 L 33.8 79.7 Z" stroke="#F4EBD5" stroke-width="0.9" opacity=".4"/>
+  </g>
+  <path d="M 20 20 l 14 0" stroke="#B8873A" stroke-width="1.4" opacity=".55"/><path d="M 20 20 l 0 14" stroke="#B8873A" stroke-width="1.4" opacity=".55"/><circle cx="20" cy="20" r="1.9" fill="#B8873A" opacity=".55"/><path d="M 1180 20 l -14 0" stroke="#B8873A" stroke-width="1.4" opacity=".55"/><path d="M 1180 20 l 0 14" stroke="#B8873A" stroke-width="1.4" opacity=".55"/><circle cx="1180" cy="20" r="1.9" fill="#B8873A" opacity=".55"/><path d="M 20 352 l 14 0" stroke="#B8873A" stroke-width="1.4" opacity=".55"/><path d="M 20 352 l 0 -14" stroke="#B8873A" stroke-width="1.4" opacity=".55"/><circle cx="20" cy="352" r="1.9" fill="#B8873A" opacity=".55"/><path d="M 1180 352 l -14 0" stroke="#B8873A" stroke-width="1.4" opacity=".55"/><path d="M 1180 352 l 0 -14" stroke="#B8873A" stroke-width="1.4" opacity=".55"/><circle cx="1180" cy="352" r="1.9" fill="#B8873A" opacity=".55"/>
+
+  <g transform="translate(96 96)">
+  <g stroke="#F4EBD5" stroke-width="2.1" fill="none" stroke-linecap="round" opacity=".92" filter="url(#rough)">
+    <path d="M 44 74 h 34 l 10 -12 h 24 l 10 12 h 22 a 6 6 0 0 1 6 6 v 38 a 6 6 0 0 1 -6 6 H 44 a 6 6 0 0 1 -6 -6 V 80 a 6 6 0 0 1 6 -6 Z"/>
+    <circle cx="92" cy="97" r="19"/><circle cx="92" cy="97" r="11" opacity=".65"/>
+    <path d="M 60 66 v -8 h 16 v 8"/><circle cx="148" cy="84" r="4"/>
+    <path d="M 44 118 l 106 0" opacity=".35"/>
+  </g>
+  <text x="60" y="140" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="11" fill="#B8873A" opacity=".85" letter-spacing="1.5">Zf</text>
+</g>
+  <g transform="translate(950 96)">
+  <g stroke="#F4EBD5" stroke-width="2.1" fill="none" stroke-linecap="round" opacity=".92" filter="url(#rough)">
+    <path d="M 18 18 h 132 a 5 5 0 0 1 5 5 v 84 a 5 5 0 0 1 -5 5 H 18 a 5 5 0 0 1 -5 -5 V 23 a 5 5 0 0 1 5 -5 Z"/>
+    <path d="M 13 38 h 142" opacity=".5"/>
+    <circle cx="26" cy="28" r="2.6"/><circle cx="36" cy="28" r="2.6"/><circle cx="46" cy="28" r="2.6"/>
+    <path d="M 28 54 l 9 8 -9 8" stroke="#B8873A"/>
+    <path d="M 44 70 h 26" stroke="#B8873A" opacity=".8"/>
+    <path d="M 28 86 h 62" opacity=".35"/><path d="M 28 98 h 44" opacity=".25"/>
+  </g>
+</g>
+
+  <text x="600.0" y="150" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="82"
+        fill="#F4EBD5" letter-spacing="3">JAY201368</text>
+  <path d="M 452 176 C 520 168, 680 184, 748 175" stroke="#B8873A" stroke-width="2" fill="none"
+        filter="url(#rough)" opacity=".9"/>
+  <text x="600.0" y="212" text-anchor="middle" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="17"
+        fill="#F4EBD5" opacity=".82" letter-spacing="3.4">LINGXIANG HU</text>
+  <text x="600.0" y="244" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="21"
+        fill="#B8873A" letter-spacing="1.2" font-style="italic">Software Engineering · Nanjing University</text>
+  <text x="600.0" y="292" text-anchor="middle" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="12.5"
+        fill="#F4EBD5" opacity=".5" letter-spacing="4">AGENTS · PHOTO APPS · 2023</text>
+</svg>
