@@ -24,7 +24,7 @@
 | Area | In practice |
 | :-- | :-- |
 | 🤖 **Agents** | Local-first coding agents — my own agent loop, tool protocol, permission model and event trace. No framework in the middle. |
-| 📷 **Photo&nbsp;apps** | Websites and small apps I wanted for my own shooting: light & weather planning, RAW file handling. Built as much for how they look and feel as for what they do. |
+| 📷 **Photography** | Websites and small apps I wanted for my own shooting: light & weather planning, RAW file handling. Built as much for how they look and feel as for what they do. |
 | 🧱 **Systems** | Python and TypeScript by default; C++ / Metal only where it actually pays off. |
 
 ## Selected work
