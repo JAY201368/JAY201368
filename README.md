@@ -63,17 +63,6 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=JAY201368&theme=github-light&hide_border=true&area=true&custom_title=Commit%20activity" width="100%" alt="Commit activity" />
 </picture>
 
-<!-- 贡献蛇：由 .github/workflows/snake.yml 每日生成 -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JAY201368/JAY201368/output/github-snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/JAY201368/JAY201368/output/github-snake.svg" alt="contribution snake" />
-</picture>
-
-</div>
-
-<!-- 3D 贡献图：由 .github/workflows/3d-contrib.yml 每日生成 -->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/JAY201368/JAY201368/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contributions" />
 </div>
 
 <div align="center">
