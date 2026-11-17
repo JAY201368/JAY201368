@@ -18,24 +18,29 @@ gh repo create JAY201368 --public --source=. --remote=origin --push
 
 ---
 
-## 2. 首次发布后必须做的一步
+## 2. 发布状态（已完成）
 
-贡献蛇（README 底部那段）现在是**注释状态**，因为 `output` 分支还不存在，直接放出来会是裂图。
+仓库已建、README 已推送：<https://github.com/JAY201368/JAY201368>，主页 <https://github.com/JAY201368> 已渲染。
 
-```bash
-gh workflow run snake.yml
-gh run watch          # 等它跑完（约 1 分钟）
-```
+**试过但已经撤掉的两块图**：贡献蛇（`Platane/snk`）和 3D 贡献图（`yoshi389111/github-profile-3d-contrib`）。原因不是配置错了，而是**数据密度不够**：880px 宽的贡献蛇要装下 156 周，你 3 年 122 次贡献被压缩成一地浅灰空格，蛇身几乎看不见；3D 图更惨，日历被压成一条对角细线，旁边的雷达图在深色底上几乎不可读。这种图在“每天有 commit”的账号上是加分项，在稀疏账号上是减分项。
 
-跑完后，把 `README.md` 里 `<!-- 贡献蛇：…` 到 `-->` 这对注释去掉（整段保留，只删注释符号），再 `git commit -am "feat: snake" && git push` 即可。
-
-可选：3D 贡献图
+等你的贡献密度上来了（大致每天有格子变绿）再加回去，两步：
 
 ```bash
-gh workflow run 3d-contrib.yml
+# 1. 恢复两个 workflow（历史里有，直接 checkout 回来）
+git checkout bf166b2 -- .github/workflows/snake.yml .github/workflows/3d-contrib.yml
+# 2. 手动跑一次，产出 SVG
+gh workflow run snake.yml && gh run watch
 ```
 
-跑完后把 README 里“可选：3D 贡献图”那段注释放开，URL 保持不变（它会把图提交到 `main` 的 `profile-3d-contrib/` 下）。
+然后在 Numbers 区块末尾加回这一段（`output` 分支和 `profile-3d-contrib/` 已生成好）：
+
+```md
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JAY201368/JAY201368/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/JAY201368/JAY201368/output/github-snake.svg" alt="contribution snake" />
+</picture>
+```
 
 ---
 
@@ -54,13 +59,15 @@ gh workflow run 3d-contrib.yml
 | 提交曲线 | `github-readme-activity-graph` | `days=90` 控制跨度；`area=true` 填充；`theme=` |
 | 页脚 | `capsule-render`（`section=footer`） | 与顶部用同一组色，视觉才闭环 |
 
+（贡献蛇 / 3D 图暂未启用，原因见第 2 节。）
+
 **没用的：`github-readme-stats`。** 公共实例（含各种 vercel 镜像）当前被限流，返回 “Something went wrong”。这个主页改用 `github-profile-summary-cards` + `streak-stats` 覆盖同样的信息。要真用 stats 卡，就 fork 一个实例并填自己的 token（见第 5 节）。
 
 ---
 
 ## 4. 排错清单
 
-- **图不显示 / 显示裂图**：先在浏览器里直接打开那个图片 URL。403/404 说明仓库或分支不存在（最常见：snake 还没跑、仓库不是 public）。503/402 说明第三方服务被限流，换服务或过会儿再试。
+- **图不显示 / 显示裂图**：先在浏览器里直接打开那个图片 URL。403/404 说明仓库或分支不存在（比如 `output` 分支被删了），503/402 说明第三方服务被限流，换服务或过会儿再试。
 - **改了地址但主页没变**：GitHub 图片走 `camo.githubusercontent.com` 缓存。加个无意义参数强制刷新，比如结尾追 `&v=2`。
 - **深浅色模式**：README 里的 `<picture>` + `prefers-color-scheme` 是 GitHub 官方支持的写法，两个 `srcset` 必须都可用，否则暗色下裂图。
 - **网络**：本机代理 `http://127.0.0.1:7890`。`git`/`gh` 走 HTTPS 时若卡住：`export https_proxy=http://127.0.0.1:7890`。GitHub Actions 在境外，不需要代理。
