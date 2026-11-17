@@ -197,10 +197,11 @@ PAD = 56
 def notes():
     rows = [
         dict(label="AGENTS", lead=True,
-             sub="workflow · orchestration · engineering discipline",
-             lines=["Agent workflows, orchestration, and the software-engineering",
-                    "discipline that makes them trustworthy: task graphs, isolated",
-                    "workers, spec → tasks → review, and traces I can read after."]),
+             sub="build · workflow · orchestration · engineering discipline",
+             lines=["Local-first coding agents I build end to end: agent loop, tool",
+                    "protocol, permission model, event trace. Alongside that I study",
+                    "how they should be run — task graphs, isolated workers, and a",
+                    "spec → tasks → review loop that ends in tested code."]),
         dict(label="PHOTOGRAPHY", color=RUST,
              lines=["Websites and small apps I wanted for my own shooting: light &",
                     "weather planning, RAW file handling. Built as much for how they",
@@ -232,7 +233,7 @@ def notes():
     h = tools_y + 54
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img"
-     aria-label="Field notes. Agents: agent workflows, orchestration and the software-engineering discipline around them — task graphs, isolated workers, spec to tasks to review, readable traces. Photography: websites and small apps I wanted for my own shooting. Systems: Python and TypeScript by default, C++ / Metal only where it pays off.">
+     aria-label="Field notes. Agents: local-first coding agents built end to end — agent loop, tool protocol, permission model, event trace — and the workflow, orchestration and software-engineering discipline around them: task graphs, isolated workers, spec to tasks to review. Photography: websites and small apps I wanted for my own shooting. Systems: Python and TypeScript by default, C++ / Metal only where it pays off.">
 {DEFS}
 {paper_card(W, h, seed=4)}
 
@@ -285,39 +286,41 @@ ICONS = {
 }
 
 
+CW, CH = 430, 222
+
+
 def card(num, title, lines, tags, live=None, icon="", kicker=""):
-    w, h = W, 230
-    body = [f'<text x="{PAD}" y="{126 + i*27}" font-family="{SERIF}" font-size="20.5" fill="{INK}" opacity=".9">{esc(line)}</text>'
+    w, h = CW, CH
+    body = [f'<text x="28" y="{116 + i*23}" font-family="{SERIF}" font-size="16.5" fill="{INK}" opacity=".9">{esc(line)}</text>'
             for i, line in enumerate(lines)]
-    chips, cx = [], PAD
+    chips, cx = [], 28
     for t in tags:
-        tw = 13 + len(t) * 8.4
+        tw = 11 + len(t) * 7.2
         chips.append(
-            f'<rect x="{cx}" y="{h-60}" width="{tw:.0f}" height="24" rx="3" fill="none" stroke="{INK}" '
-            f'stroke-width="1.2" opacity=".6" filter="url(#rough)"/>'
-            f'<text x="{cx + tw/2:.0f}" y="{h-43}" text-anchor="middle" font-family="{MONO}" font-size="11.5" '
-            f'fill="{INK}" opacity=".8" letter-spacing="1">{esc(t)}</text>'
+            f'<rect x="{cx}" y="{h-52}" width="{tw:.0f}" height="20" rx="3" fill="none" stroke="{INK}" '
+            f'stroke-width="1.1" opacity=".6" filter="url(#rough)"/>'
+            f'<text x="{cx + tw/2:.0f}" y="{h-38}" text-anchor="middle" font-family="{MONO}" font-size="10.5" '
+            f'fill="{INK}" opacity=".8" letter-spacing=".8">{esc(t)}</text>'
         )
-        cx += tw + 12
+        cx += tw + 9
     live_txt = ""
     if live:
-        live_txt = (f'<text x="{w - 46}" y="{h-43}" text-anchor="end" font-family="{MONO}" font-size="12" '
-                    f'fill="{RUST}" letter-spacing="1.6">{esc(live)} ↗</text>')
+        live_txt = (f'<text x="{w-30}" y="{h-38}" text-anchor="end" font-family="{MONO}" font-size="10.5" '
+                    f'fill="{RUST}" letter-spacing="1.2">{esc(live)} ↗</text>')
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img"
      aria-label="{title}: {' '.join(lines)}">
 {DEFS}
 {paper_card(w, h, seed=7 + num)}
 
-  <text x="{PAD}" y="46" font-family="{MONO}" font-size="11.5" fill="{RUST}" letter-spacing="2.4">{num:02d} / 04</text>
-  <text x="{w - 46}" y="46" text-anchor="end" font-family="{MONO}" font-size="10.5" fill="{INK}" opacity=".55" letter-spacing="2.2">{kicker}</text>
-  <text x="{PAD}" y="88" font-family="{SERIF}" font-size="33" fill="{INK}" letter-spacing="0.6">{title}</text>
+  <text x="28" y="36" font-family="{MONO}" font-size="10.5" fill="{RUST}" letter-spacing="2">{kicker}</text>
+  <text x="28" y="84" font-family="{SERIF}" font-size="30" fill="{INK}" letter-spacing="0.4">{title}</text>
 
   {"".join(body)}
   {"".join(chips)}
   {live_txt}
 
-  <g transform="translate({w - 120} 74)">{icon}</g>
+  <g transform="translate({w-78} 18) scale(0.5)">{icon}</g>
 </svg>
 """
 
@@ -381,19 +384,19 @@ def main():
         "stamp.svg": stamp(),
         "footer.svg": footer(),
         "card-maestro.svg": card(1, "maestro",
-                                 ["A Codex skill that orchestrates workers, task",
-                                  "dependencies and staged software delivery."],
+                                 ["Codex skill: worker orchestration, task",
+                                  "dependencies, staged delivery."],
                                  ["Python"], live="docs", icon=ICONS["maestro"], kicker="ORCHESTRATION"),
         "card-codingagentneo.svg": card(2, "CodingAgentNeo",
-                                        ["A coding agent written from scratch: agent loop, six",
-                                         "workspace tools, three permission modes, HTTP/SSE API."],
+                                        ["From scratch: agent loop, six tools,",
+                                         "permissions, traces, SSE API, Vue GUI."],
                                         ["Python", "TypeScript"], icon=ICONS["codingagentneo"], kicker="AGENT RUNTIME"),
         "card-hikaridaily.svg": card(3, "HikariDaily",
-                                     ["A photography weather newspaper: sun position, shooting",
-                                      "windows, gear readings and a field handbook."],
+                                     ["Weather newspaper: sun position, light",
+                                      "windows, gear readings, a handbook."],
                                      ["TypeScript"], live="live", icon=ICONS["hikaridaily"], kicker="PHOTO APP"),
         "card-zf2lumix.svg": card(4, "zf2lumix",
-                                  ["Nikon Zf NEF → S5M2-compatible RW2, offline,",
+                                  ["Nikon Zf NEF → S5M2 RW2, offline,",
                                    "with a filmstrip interface."],
                                   ["Python", "Metal"], live="live", icon=ICONS["zf2lumix"], kicker="PHOTO TOOL"),
     }

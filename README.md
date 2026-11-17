@@ -20,19 +20,11 @@
 ## Selected work
 
 <div align="center">
-  <a href="https://github.com/JAY201368/maestro"><img src="assets/card-maestro.svg" width="100%" alt="maestro — a Codex skill that orchestrates workers, task dependencies and staged software delivery. Python." /></a>
-</div>
-
-<div align="center">
-  <a href="https://github.com/JAY201368/CodingAgentNeo"><img src="assets/card-codingagentneo.svg" width="100%" alt="CodingAgentNeo — a coding agent written from scratch: agent loop, six workspace tools, three permission modes, HTTP/SSE API. Python, TypeScript." /></a>
-</div>
-
-<div align="center">
-  <a href="https://github.com/JAY201368/HikariDaily"><img src="assets/card-hikaridaily.svg" width="100%" alt="HikariDaily — a photography weather newspaper: sun position, shooting windows, gear readings and a field handbook. TypeScript, live demo." /></a>
-</div>
-
-<div align="center">
-  <a href="https://github.com/JAY201368/zf2lumix"><img src="assets/card-zf2lumix.svg" width="100%" alt="zf2lumix — Nikon Zf NEF to S5M2-compatible RW2, offline, with a filmstrip interface. Python, Metal, live demo." /></a>
+  <a href="https://github.com/JAY201368/maestro"><img src="assets/card-maestro.svg" width="48%" alt="maestro — Codex skill for worker orchestration, task dependencies and staged delivery. Python." /></a>
+  <a href="https://github.com/JAY201368/CodingAgentNeo"><img src="assets/card-codingagentneo.svg" width="48%" alt="CodingAgentNeo — a coding agent written from scratch: agent loop, six tools, permission modes, traces, SSE API, Vue GUI. Python, TypeScript." /></a>
+  <br />
+  <a href="https://github.com/JAY201368/HikariDaily"><img src="assets/card-hikaridaily.svg" width="48%" alt="HikariDaily — photography weather newspaper: sun position, light windows, gear readings, a field handbook. TypeScript, live demo." /></a>
+  <a href="https://github.com/JAY201368/zf2lumix"><img src="assets/card-zf2lumix.svg" width="48%" alt="zf2lumix — Nikon Zf NEF to S5M2-compatible RW2, offline, with a filmstrip interface. Python, Metal, live demo." /></a>
 </div>
 
 <div align="center">
