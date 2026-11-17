@@ -8,7 +8,7 @@
 </div>
 
 <div align="center">
-  <img src="assets/stamp.svg" width="300" alt="Nanjing University · Software Engineering · est. 2023" />
+  <img src="assets/stamp.svg" width="340" alt="Nanjing University · Software Engineering · est. 2023" />
 </div>
 
 <img src="assets/rule.svg" width="100%" alt="" />
