@@ -39,7 +39,7 @@
 | `rule.svg` | 1200×46 | 分隔线 + 中央太阳纹，用赭红所以深浅色都可见 |
 | `notes.svg` | 800×632 | "Field notes" 纸卡：AGENTS（带 workflow / orchestration / discipline 副标，字号加权）/ PHOTOGRAPHY / SYSTEMS + TOOLS 行 |
 | `card-*.svg` | 430×222 | 4 张项目卡，README 里用 `width="48%"` 两两并排成田字格，每张外面套 `<a>` |
-| `footer.svg` | 1200×240 | 深绿收尾幅：横线 + 菱形装饰 + 斜体引言 |
+| `footer.svg` | 1200×148 | 深绿收尾幅：横线 + 菱形装饰 + 打字机署名（不含 slogan） |
 
 全部由 `tools/build_assets.py` 生成。**改文案、改配色都改脚本，不要手改 SVG。**
 

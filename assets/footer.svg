@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img"
-     aria-label="Photos are taken, code is written. Both are just exposure.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 148" width="1200" height="148" role="img"
+     aria-label="JAY201368 · Nanjing · 2023">
 
   <defs>
     <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
@@ -21,18 +21,16 @@
   <linearGradient id="vg2" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#15291E"/><stop offset="1" stop-color="#254834"/>
   </linearGradient>
-  <rect width="1200" height="240" fill="#1F3B2C"/>
-  <rect width="1200" height="240" fill="url(#vg2)"/>
-  <rect x="0" y="0" width="1200" height="240" fill="#8a7a5c" filter="url(#grain)" opacity="0.09"/>
-  <path d="M 26.2 22.3 L 80.8 21.4 L 134.4 23.0 L 189.1 21.2 L 242.4 22.3 L 296.0 23.2 L 350.1 21.9 L 405.2 22.4 L 457.5 21.5 L 512.0 20.8 L 566.3 22.6 L 619.8 22.9 L 675.1 22.1 L 728.5 21.0 L 780.8 23.2 L 835.4 21.3 L 891.0 22.6 L 943.0 21.5 L 997.3 21.4 L 1050.7 22.1 L 1105.5 21.7 L 1159.2 21.0 L 1172.8 23.0 L 1174.6 76.2 L 1173.0 129.1 L 1173.0 183.5 L 1172.8 217.4 L 1119.2 217.2 L 1066.4 217.9 L 1011.9 217.6 L 958.1 218.7 L 903.5 216.9 L 850.0 217.7 L 796.7 217.0 L 743.0 216.7 L 688.1 217.9 L 633.5 219.0 L 580.5 217.1 L 526.0 218.3 L 470.8 216.9 L 418.3 218.6 L 363.9 217.8 L 310.0 217.4 L 257.0 219.2 L 202.0 216.8 L 147.7 218.8 L 93.5 217.0 L 39.2 218.6 L 26.3 217.4 L 26.3 164.7 L 27.2 110.9 L 25.8 56.8 Z" fill="none" stroke="#F4EBD5"
+  <rect width="1200" height="148" fill="#1F3B2C"/>
+  <rect width="1200" height="148" fill="url(#vg2)"/>
+  <rect x="0" y="0" width="1200" height="148" fill="#8a7a5c" filter="url(#grain)" opacity="0.09"/>
+  <path d="M 26.2 20.3 L 80.8 19.4 L 134.4 21.0 L 189.1 19.2 L 242.4 20.3 L 296.0 21.2 L 350.1 19.9 L 405.2 20.4 L 457.5 19.5 L 512.0 18.8 L 566.3 20.6 L 619.8 20.9 L 675.1 20.1 L 728.5 19.0 L 780.8 21.2 L 835.4 19.3 L 891.0 20.6 L 943.0 19.5 L 997.3 19.4 L 1050.7 20.1 L 1105.5 19.7 L 1159.2 19.0 L 1172.8 21.0 L 1174.6 74.2 L 1173.0 127.1 L 1173.0 127.5 L 1118.8 127.4 L 1065.2 127.2 L 1012.4 127.9 L 957.9 127.6 L 904.1 128.7 L 849.5 126.9 L 796.0 127.7 L 742.7 127.0 L 689.0 126.7 L 634.1 127.9 L 579.5 129.0 L 526.5 127.1 L 472.0 128.3 L 416.8 126.9 L 364.3 128.6 L 309.9 127.8 L 256.0 127.4 L 203.0 129.2 L 148.0 126.8 L 93.7 128.8 L 39.5 127.0 L 25.2 128.6 L 26.3 73.4 L 26.3 20.7 Z" fill="none" stroke="#F4EBD5"
         stroke-width="1.8" opacity=".8" filter="url(#rough2)"/>
-  <g stroke="#F4EBD5" stroke-width="1.6" fill="none" filter="url(#rough)" opacity=".75" transform="translate(600 74)">
+  <g stroke="#F4EBD5" stroke-width="1.6" fill="none" filter="url(#rough)" opacity=".75" transform="translate(600 58)">
     <path d="M -140 0 h 96"/><path d="M 44 0 h 96"/>
     <path d="M -30 0 c 8 -11 20 -11 28 0 c -8 11 -20 11 -28 0 Z"/>
     <circle cx="26" cy="0" r="4"/>
   </g>
-  <text x="600.0" y="132" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="27" font-style="italic"
-        fill="#F4EBD5" opacity=".95">Photos are taken, code is written. Both are just exposure.</text>
-  <text x="600.0" y="178" text-anchor="middle" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="11.5"
-        fill="#B8873A" letter-spacing="4" opacity=".9">JAY201368 · NANJING · MMXXIII</text>
+  <text x="600.0" y="102" text-anchor="middle" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="18"
+        fill="#B8873A" letter-spacing="4.2">JAY201368 · NANJING · MMXXIII</text>
 </svg>

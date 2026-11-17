@@ -28,5 +28,5 @@
 </div>
 
 <div align="center">
-  <img src="assets/footer.svg" width="100%" alt="Photos are taken, code is written. Both are just exposure." />
+  <img src="assets/footer.svg" width="100%" alt="" />
 </div>

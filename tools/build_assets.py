@@ -350,9 +350,9 @@ def stamp():
 
 # ---------------------------------------------------------------- footer
 def footer():
-    w, h = 1200, 240
+    w, h = 1200, 148
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img"
-     aria-label="Photos are taken, code is written. Both are just exposure.">
+     aria-label="JAY201368 · Nanjing · 2023">
 {DEFS}
   <linearGradient id="vg2" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#15291E"/><stop offset="1" stop-color="#254834"/>
@@ -360,17 +360,15 @@ def footer():
   <rect width="{w}" height="{h}" fill="{INK}"/>
   <rect width="{w}" height="{h}" fill="url(#vg2)"/>
   {grain(w, h, 0.09)}
-  <path d="{rough_rect(26, 22, w-52, h-44, seed=33, step=54, jit=1.3)}" fill="none" stroke="{PAPER}"
+  <path d="{rough_rect(26, 20, w-52, h-40, seed=33, step=54, jit=1.3)}" fill="none" stroke="{PAPER}"
         stroke-width="1.8" opacity=".8" filter="url(#rough2)"/>
-  <g stroke="{PAPER}" stroke-width="1.6" fill="none" filter="url(#rough)" opacity=".75" transform="translate(600 74)">
+  <g stroke="{PAPER}" stroke-width="1.6" fill="none" filter="url(#rough)" opacity=".75" transform="translate(600 58)">
     <path d="M -140 0 h 96"/><path d="M 44 0 h 96"/>
     <path d="M -30 0 c 8 -11 20 -11 28 0 c -8 11 -20 11 -28 0 Z"/>
     <circle cx="26" cy="0" r="4"/>
   </g>
-  <text x="{w/2}" y="132" text-anchor="middle" font-family="{SERIF}" font-size="27" font-style="italic"
-        fill="{PAPER}" opacity=".95">Photos are taken, code is written. Both are just exposure.</text>
-  <text x="{w/2}" y="178" text-anchor="middle" font-family="{MONO}" font-size="11.5"
-        fill="{GOLD}" letter-spacing="4" opacity=".9">JAY201368 · NANJING · MMXXIII</text>
+  <text x="{w/2}" y="102" text-anchor="middle" font-family="{MONO}" font-size="18"
+        fill="{GOLD}" letter-spacing="4.2">JAY201368 · NANJING · MMXXIII</text>
 </svg>
 """
 
