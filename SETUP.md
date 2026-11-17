@@ -3,7 +3,7 @@
 主页：<https://github.com/JAY201368>
 仓库：<https://github.com/JAY201368/JAY201368>（public）
 
-**一句话原则：所有视觉资产都是本仓库自绘的 SVG，不依赖第三方主题。** 第三方只保留两张数据卡（连续贡献、提交曲线），并把它们的配色改到同一套色板里。
+**一句话原则：所有视觉资产都是本仓库自绘的 SVG，整页不依赖任何第三方组件。** 没有徽章、没有统计卡、没有图标条——身份信息交给橡皮章，技术栈交给纸卡里的 TOOLS 行，项目交给四张纸卡。
 
 ---
 
@@ -37,7 +37,7 @@
 | `hero.svg` | 1200×372 | 深绿横幅：双层手绘框、四角裁切线、左边相机线稿、右边终端线稿、衬线大名 |
 | `stamp.svg` | 600×118 | 赭红橡皮章，旋转 −2.4°，实际显示 300px |
 | `rule.svg` | 1200×46 | 分隔线 + 中央太阳纹，用赭红所以深浅色都可见 |
-| `notes.svg` | 800×536 | "Field notes" 纸卡：AGENTS / PHOTOGRAPHY / SYSTEMS 三段 + TOOLS 行 |
+| `notes.svg` | 800×588 | "Field notes" 纸卡：AGENTS（带 workflow / orchestration / discipline 副标，字号加权）/ PHOTOGRAPHY / SYSTEMS + TOOLS 行 |
 | `card-*.svg` | 800×230 | 4 张项目卡，每张一整块可点击区域（外面套 `<a>`） |
 | `footer.svg` | 1200×240 | 深绿收尾幅：横线 + 菱形装饰 + 斜体引言 |
 
@@ -63,7 +63,6 @@ stamp.svg
 rule.svg
 ## What I work on   →  notes.svg
 ## Selected work    →  card-maestro / codingagentneo / hikaridaily / zf2lumix
-## Numbers          →  streak-stats + activity-graph（改配色后的第三方卡）
 footer.svg
 ```
 
@@ -71,29 +70,28 @@ README 里几乎没有可读文字——所有 copy 都烘进了 SVG，靠 `alt`
 
 ---
 
-## 4. 两张数据卡
+## 4. 为什么没有数据卡
 
-**连续贡献**（`streak-stats.demolab.com`）参数一一对应色板：
+上一版有过两张：连续贡献（`streak-stats`）和提交曲线（`activity-graph`），已按要求移除。理由是它们和这套印刷语言的关系只能是「贴一张网页截图上去」：第三方卡片的字体、间距、圆角都不受控，而且贡献稀疏时整张卡反而在强调「没什么内容」。
+
+如果以后想加回来，配色参数留在这里（米色纸 + 深绿墨 + 赭红强调），加的时候记得带 `disable_animations=true`——该服务默认把文字设成 `opacity:0` 再淡入，遇到「减少动态效果」的系统设置会永久空白：
 
 ```text
-background=F4EBD5  纸底      border=1F3B2C  边框
-stroke=1F3B2C      分隔线    ring=A9472B    当前连续的外环
-fire=A9472B        火苗      currStreakNum=1F3B2C / sideNums=1F3B2C  数字
-currStreakLabel=A9472B  sideLabels=33543F  dates=6B7F6E
-border_radius=3     disable_animations=true
+https://streak-stats.demolab.com?user=JAY201368
+  &background=F4EBD5&border=1F3B2C&stroke=1F3B2C
+  &ring=A9472B&fire=A9472B
+  &currStreakNum=1F3B2C&sideNums=1F3B2C
+  &currStreakLabel=A9472B&sideLabels=33543F&dates=6B7F6E
+  &border_radius=3&disable_animations=true
 ```
 
-`disable_animations=true` 是必须的：该服务默认把文字设成 `opacity:0` 再用动画淡入，遇到「减少动态效果」的系统设置或慢网络时会一直空白。
+```text
+https://github-readme-activity-graph.vercel.app/graph?username=JAY201368
+  &bg_color=F4EBD5&color=1F3B2C&line=1F3B2C
+  &point=A9472B&area=true&area_color=33543F&radius=3
+```
 
-**提交曲线**（`github-readme-activity-graph`）：`bg_color=F4EBD5` `color=1F3B2C` `line=1F3B2C` `point=A9472B` `area=true` `area_color=33543F` `radius=3`，出来就是一张米色方格纸。
-
-为什么换掉上一版的东西：
-
-- `github-readme-stats` 公共实例长期 503，放弃；
-- `github-profile-summary-cards` 只能选预设主题，调不出米色 + 深绿，放弃；
-- `skillicons.dev` 是扁平现代风，和手绘语言冲突，换成纸卡里的 TOOLS 文字行；
-- `readme-typing-svg` 的打字机动画在这种静态印刷语言里像异物，删掉；
-- `shields.io` 徽章同理删掉，身份信息交给橡皮章。
+另外两个被否决的选项：`github-readme-stats` 公共实例长期 503；`github-profile-summary-cards` 只能选预设主题，调不出米色 + 深绿。`skillicons.dev`、`shields.io` 徽章、`readme-typing-svg` 同样因为风格冲突而删除。
 
 ---
 
@@ -111,7 +109,7 @@ border_radius=3     disable_animations=true
 
 - **新项目卡**：复制 `main()` 里任意一条 `card(...)`，加一个 `ICONS` 线稿（80×80 视口内画），重新生成。
 - **博客链接**：域名 `www.jay201368.blog` 目前没有 DNS 记录，所以主页里没放；恢复后可以做成一张小纸签 SVG，或直接在正文加一行 markdown 链接。
-- **贡献蛇 / 3D 图**：暂时不建议（数据太稀疏，会把「大部分格子是灰的」放大成视觉主体）。等每天都有绿格子再考虑，历史提交里有可复用的配置。
+- **贡献蛇 / 3D 图 / 统计卡**：暂时不建议（数据太稀疏，会把「大部分格子是灰的」放大成视觉主体）。等每天都有绿格子再考虑，参数见第 4 节。
 
 ---
 

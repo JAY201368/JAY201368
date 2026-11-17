@@ -25,6 +25,7 @@
   <rect x="0" y="0" width="800" height="230" fill="#8a7a5c" filter="url(#grain)" opacity="0.05"/>
 
   <text x="56" y="46" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="11.5" fill="#A9472B" letter-spacing="2.4">01 / 04</text>
+  <text x="754" y="46" text-anchor="end" font-family="'Courier New', 'Nimbus Mono PS', ui-monospace, monospace" font-size="10.5" fill="#1F3B2C" opacity=".55" letter-spacing="2.2">ORCHESTRATION</text>
   <text x="56" y="88" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="33" fill="#1F3B2C" letter-spacing="0.6">maestro</text>
 
   <text x="56" y="126" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="20.5" fill="#1F3B2C" opacity=".9">A Codex skill that orchestrates workers, task</text><text x="56" y="153" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-size="20.5" fill="#1F3B2C" opacity=".9">dependencies and staged software delivery.</text>

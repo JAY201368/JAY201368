@@ -196,33 +196,43 @@ PAD = 56
 
 def notes():
     rows = [
-        ("AGENTS", INK,
-         ["Local-first coding agents — my own agent loop, tool protocol,",
-          "permission model and event trace. No framework in the middle."]),
-        ("PHOTOGRAPHY", RUST,
-         ["Websites and small apps I wanted for my own shooting: light &",
-          "weather planning, RAW file handling. Built as much for how they",
-          "look and feel as for what they do."]),
-        ("SYSTEMS", INK,
-         ["Python and TypeScript by default; C++ / Metal only where it",
-          "actually pays off."]),
+        dict(label="AGENTS", lead=True,
+             sub="workflow · orchestration · engineering discipline",
+             lines=["Agent workflows, orchestration, and the software-engineering",
+                    "discipline that makes them trustworthy: task graphs, isolated",
+                    "workers, spec → tasks → review, and traces I can read after."]),
+        dict(label="PHOTOGRAPHY", color=RUST,
+             lines=["Websites and small apps I wanted for my own shooting: light &",
+                    "weather planning, RAW file handling. Built as much for how they",
+                    "look and feel as for what they do."]),
+        dict(label="SYSTEMS",
+             lines=["Python and TypeScript by default; C++ / Metal only where it",
+                    "actually pays off."]),
     ]
-    y = 100
+    y = 104
     body = []
-    for i, (label, lcol, lines) in enumerate(rows):
-        body.append(f'<text x="{PAD}" y="{y}" font-family="{MONO}" font-size="12.5" fill="{lcol}" letter-spacing="3.2">{label}</text>')
-        for j, line in enumerate(lines):
-            body.append(f'<text x="{PAD}" y="{y + 29 + j*26}" font-family="{SERIF}" font-size="20.5" fill="{INK}" opacity=".92">{esc(line)}</text>')
-        y += 29 + len(lines) * 26 + 16
+    for i, row in enumerate(rows):
+        lead = row.get("lead", False)
+        size = 21.5 if lead else 20.5
+        gap = 27
+        if lead:
+            body.append(f'<rect x="{PAD}" y="{y - 9}" width="7" height="7" fill="{RUST}"/>')
+            body.append(f'<text x="{PAD + 16}" y="{y}" font-family="{MONO}" font-size="13" fill="{RUST}" letter-spacing="3.2">{row["label"]}</text>')
+            body.append(f'<text x="{PAD + 122}" y="{y}" font-family="{SERIF}" font-size="15.5" font-style="italic" fill="{INK2}">{esc(row["sub"])}</text>')
+        else:
+            body.append(f'<text x="{PAD}" y="{y}" font-family="{MONO}" font-size="12.5" fill="{row.get("color", INK)}" letter-spacing="3.2">{row["label"]}</text>')
+        for j, line in enumerate(row["lines"]):
+            body.append(f'<text x="{PAD}" y="{y + (35 if lead else 29) + j*gap}" font-family="{SERIF}" font-size="{size}" fill="{INK}" opacity="{0.95 if lead else 0.9}">{esc(line)}</text>')
+        y += (35 if lead else 29) + len(row["lines"]) * gap + (22 if lead else 16)
         if i < len(rows) - 1:
             body.append(f'<path d="{rough_line(PAD, y - 14, W - 46, y - 14, seed=20 + i, seg=60, jit=0.7)}" stroke="{INK}" stroke-width="0.9" opacity=".28" stroke-dasharray="2 6"/>')
-            y += 30
+            y += 34
     body = "\n  ".join(body)
     tools_y = y + 16
     h = tools_y + 54
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img"
-     aria-label="Field notes: agents, photography apps, systems">
+     aria-label="Field notes. Agents: agent workflows, orchestration and the software-engineering discipline around them — task graphs, isolated workers, spec to tasks to review, readable traces. Photography: websites and small apps I wanted for my own shooting. Systems: Python and TypeScript by default, C++ / Metal only where it pays off.">
 {DEFS}
 {paper_card(W, h, seed=4)}
 
@@ -275,7 +285,7 @@ ICONS = {
 }
 
 
-def card(num, title, lines, tags, live=None, icon=""):
+def card(num, title, lines, tags, live=None, icon="", kicker=""):
     w, h = W, 230
     body = [f'<text x="{PAD}" y="{126 + i*27}" font-family="{SERIF}" font-size="20.5" fill="{INK}" opacity=".9">{esc(line)}</text>'
             for i, line in enumerate(lines)]
@@ -300,6 +310,7 @@ def card(num, title, lines, tags, live=None, icon=""):
 {paper_card(w, h, seed=7 + num)}
 
   <text x="{PAD}" y="46" font-family="{MONO}" font-size="11.5" fill="{RUST}" letter-spacing="2.4">{num:02d} / 04</text>
+  <text x="{w - 46}" y="46" text-anchor="end" font-family="{MONO}" font-size="10.5" fill="{INK}" opacity=".55" letter-spacing="2.2">{kicker}</text>
   <text x="{PAD}" y="88" font-family="{SERIF}" font-size="33" fill="{INK}" letter-spacing="0.6">{title}</text>
 
   {"".join(body)}
@@ -372,19 +383,19 @@ def main():
         "card-maestro.svg": card(1, "maestro",
                                  ["A Codex skill that orchestrates workers, task",
                                   "dependencies and staged software delivery."],
-                                 ["Python"], live="docs", icon=ICONS["maestro"]),
+                                 ["Python"], live="docs", icon=ICONS["maestro"], kicker="ORCHESTRATION"),
         "card-codingagentneo.svg": card(2, "CodingAgentNeo",
                                         ["A coding agent written from scratch: agent loop, six",
                                          "workspace tools, three permission modes, HTTP/SSE API."],
-                                        ["Python", "TypeScript"], icon=ICONS["codingagentneo"]),
+                                        ["Python", "TypeScript"], icon=ICONS["codingagentneo"], kicker="AGENT RUNTIME"),
         "card-hikaridaily.svg": card(3, "HikariDaily",
                                      ["A photography weather newspaper: sun position, shooting",
                                       "windows, gear readings and a field handbook."],
-                                     ["TypeScript"], live="live", icon=ICONS["hikaridaily"]),
+                                     ["TypeScript"], live="live", icon=ICONS["hikaridaily"], kicker="PHOTO APP"),
         "card-zf2lumix.svg": card(4, "zf2lumix",
                                   ["Nikon Zf NEF → S5M2-compatible RW2, offline,",
                                    "with a filmstrip interface."],
-                                  ["Python", "Metal"], live="live", icon=ICONS["zf2lumix"]),
+                                  ["Python", "Metal"], live="live", icon=ICONS["zf2lumix"], kicker="PHOTO TOOL"),
     }
     for name, svg in files.items():
         (OUT / name).write_text(svg, encoding="utf-8")

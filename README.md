@@ -15,7 +15,7 @@
 
 ## What I work on
 
-<img src="assets/notes.svg" width="100%" alt="Field notes — agents: local-first coding agents with my own agent loop, tool protocol, permission model and event trace. Photography: websites and small apps I wanted for my own shooting. Systems: Python and TypeScript by default, C++ / Metal only where it pays off." />
+<img src="assets/notes.svg" width="100%" alt="Field notes. Agents: agent workflows, orchestration and the software-engineering discipline around them — task graphs, isolated workers, spec to tasks to review, readable traces. Photography: websites and small apps I wanted for my own shooting. Systems: Python and TypeScript by default, C++ / Metal only where it pays off." />
 
 ## Selected work
 
@@ -33,16 +33,6 @@
 
 <div align="center">
   <a href="https://github.com/JAY201368/zf2lumix"><img src="assets/card-zf2lumix.svg" width="100%" alt="zf2lumix — Nikon Zf NEF to S5M2-compatible RW2, offline, with a filmstrip interface. Python, Metal, live demo." /></a>
-</div>
-
-## Numbers
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=JAY201368&background=F4EBD5&border=1F3B2C&stroke=1F3B2C&ring=A9472B&fire=A9472B&currStreakNum=1F3B2C&sideNums=1F3B2C&currStreakLabel=A9472B&sideLabels=33543F&dates=6B7F6E&border_radius=3&disable_animations=true&date_format=%5BY.%5Dn.j" width="520" alt="Contribution streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=JAY201368&bg_color=F4EBD5&color=1F3B2C&title_color=A9472B&line=1F3B2C&point=A9472B&area=true&area_color=33543F&hide_border=false&radius=3&custom_title=Commit%20activity" width="100%" alt="Commit activity, last 31 days" />
 </div>
 
 <div align="center">
