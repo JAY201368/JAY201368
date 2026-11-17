@@ -37,7 +37,7 @@
 | `hero.svg` | 1200×372 | 深绿横幅：双层手绘框、四角裁切线、左边相机线稿、右边终端线稿、衬线大名 |
 | `stamp.svg` | 600×118 | 赭红橡皮章，旋转 −2.4°，实际显示 300px |
 | `rule.svg` | 1200×46 | 分隔线 + 中央太阳纹，用赭红所以深浅色都可见 |
-| `notes.svg` | 800×625 | "Field notes" 纸卡：AGENTS（带 workflow / orchestration / discipline 副标，字号加权）/ PHOTOGRAPHY / SYSTEMS + TOOLS 行 |
+| `notes.svg` | 800×632 | "Field notes" 纸卡：AGENTS（带 workflow / orchestration / discipline 副标，字号加权）/ PHOTOGRAPHY / SYSTEMS + TOOLS 行 |
 | `card-*.svg` | 430×222 | 4 张项目卡，README 里用 `width="48%"` 两两并排成田字格，每张外面套 `<a>` |
 | `footer.svg` | 1200×240 | 深绿收尾幅：横线 + 菱形装饰 + 斜体引言 |
 
